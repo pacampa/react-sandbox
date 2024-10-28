@@ -1,13 +1,12 @@
-import useFetch from '../hooks/useFetch'
+import useFetch from "../hooks/useFetch"
+
 
 function CustomHookExample1() {
-  const { data, loading } = useFetch(
-    'https://jsonplaceholder.typicode.com/posts',
-    {}
-  )
-
+  const {data, loading} = useFetch('https://jsonplaceholder.typicode.com/posts', {});
   if (loading) {
     return <h3>Loading...</h3>
+  } else {
+
   }
 
   return (
